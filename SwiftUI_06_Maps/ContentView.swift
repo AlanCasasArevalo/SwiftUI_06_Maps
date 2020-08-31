@@ -10,7 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            GeneralMapView().tabItem {
+                Image(systemName: "map.fill")
+            }
+            UserMapView().tabItem {
+                Image(systemName: "mappin.circle.fill")
+            }
+            StoryMapView().tabItem {
+                Image(systemName: "location.fill")
+            }
+        }
     }
 }
 

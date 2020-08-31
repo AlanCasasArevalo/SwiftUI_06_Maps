@@ -14,6 +14,13 @@
 		51FE7AF124FD11BD001F4740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7AF024FD11BD001F4740 /* Assets.xcassets */; };
 		51FE7AF424FD11BE001F4740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7AF324FD11BE001F4740 /* Preview Assets.xcassets */; };
 		51FE7AF724FD11BE001F4740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7AF524FD11BE001F4740 /* LaunchScreen.storyboard */; };
+		51FE7B0024FD1251001F4740 /* GeneralMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7AFF24FD1251001F4740 /* GeneralMapView.swift */; };
+		51FE7B0224FD125E001F4740 /* UserMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B0124FD125E001F4740 /* UserMapView.swift */; };
+		51FE7B0424FD1276001F4740 /* StoryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B0324FD1276001F4740 /* StoryMapView.swift */; };
+		51FE7B0824FD1FC5001F4740 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B0624FD1FC5001F4740 /* MapViewController.swift */; };
+		51FE7B0924FD1FC5001F4740 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7B0724FD1FC5001F4740 /* MapViewController.xib */; };
+		51FE7B0C24FD2743001F4740 /* CoordinateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FE7B0A24FD2743001F4740 /* CoordinateViewController.swift */; };
+		51FE7B0D24FD2743001F4740 /* CoordinateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FE7B0B24FD2743001F4740 /* CoordinateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		51FE7AF324FD11BE001F4740 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51FE7AF624FD11BE001F4740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FE7AF824FD11BE001F4740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FE7AFF24FD1251001F4740 /* GeneralMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralMapView.swift; sourceTree = "<group>"; };
+		51FE7B0124FD125E001F4740 /* UserMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapView.swift; sourceTree = "<group>"; };
+		51FE7B0324FD1276001F4740 /* StoryMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMapView.swift; sourceTree = "<group>"; };
+		51FE7B0624FD1FC5001F4740 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		51FE7B0724FD1FC5001F4740 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		51FE7B0A24FD2743001F4740 /* CoordinateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateViewController.swift; sourceTree = "<group>"; };
+		51FE7B0B24FD2743001F4740 /* CoordinateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoordinateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +72,11 @@
 		51FE7AE624FD11BC001F4740 /* SwiftUI_06_Maps */ = {
 			isa = PBXGroup;
 			children = (
+				51FE7B0524FD1FAB001F4740 /* ViewController */,
 				51FE7AE724FD11BC001F4740 /* AppDelegate.swift */,
 				51FE7AE924FD11BC001F4740 /* SceneDelegate.swift */,
 				51FE7AEE24FD11BC001F4740 /* ContentView.swift */,
+				51FE7AFE24FD123C001F4740 /* Views */,
 				51FE7AF024FD11BD001F4740 /* Assets.xcassets */,
 				51FE7AF524FD11BE001F4740 /* LaunchScreen.storyboard */,
 				51FE7AF824FD11BE001F4740 /* Info.plist */,
@@ -76,6 +92,27 @@
 				51FE7AF324FD11BE001F4740 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51FE7AFE24FD123C001F4740 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51FE7AFF24FD1251001F4740 /* GeneralMapView.swift */,
+				51FE7B0124FD125E001F4740 /* UserMapView.swift */,
+				51FE7B0324FD1276001F4740 /* StoryMapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51FE7B0524FD1FAB001F4740 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51FE7B0A24FD2743001F4740 /* CoordinateViewController.swift */,
+				51FE7B0B24FD2743001F4740 /* CoordinateViewController.xib */,
+				51FE7B0624FD1FC5001F4740 /* MapViewController.swift */,
+				51FE7B0724FD1FC5001F4740 /* MapViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +176,8 @@
 				51FE7AF724FD11BE001F4740 /* LaunchScreen.storyboard in Resources */,
 				51FE7AF424FD11BE001F4740 /* Preview Assets.xcassets in Resources */,
 				51FE7AF124FD11BD001F4740 /* Assets.xcassets in Resources */,
+				51FE7B0D24FD2743001F4740 /* CoordinateViewController.xib in Resources */,
+				51FE7B0924FD1FC5001F4740 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FE7B0224FD125E001F4740 /* UserMapView.swift in Sources */,
 				51FE7AE824FD11BC001F4740 /* AppDelegate.swift in Sources */,
 				51FE7AED24FD11BC001F4740 /* SwiftUI_06_Maps.xcdatamodeld in Sources */,
+				51FE7B0024FD1251001F4740 /* GeneralMapView.swift in Sources */,
+				51FE7B0424FD1276001F4740 /* StoryMapView.swift in Sources */,
 				51FE7AEF24FD11BC001F4740 /* ContentView.swift in Sources */,
 				51FE7AEA24FD11BC001F4740 /* SceneDelegate.swift in Sources */,
+				51FE7B0C24FD2743001F4740 /* CoordinateViewController.swift in Sources */,
+				51FE7B0824FD1FC5001F4740 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
