@@ -17,7 +17,18 @@ struct GeneralMapView: View {
     @State private var title: String = "chozas de canales"
 
     var body: some View {
-        Map(latitude: latitude, longitude: longitude, zoom: zoom, title: title)
+        VStack {
+            Map(latitude: latitude, longitude: longitude, zoom: zoom, title: title)
+        }
+        .onAppear {
+            if (UserDefaults.standard.value(forKey: "latitude") != nil),
+                (UserDefaults.standard.value(forKey: "longitude") != nil),
+                (UserDefaults.standard.value(forKey: "countryTextField") != nil)  {
+                self.latitude = UserDefaults.standard.value(forKey: "latitude") as! Double
+                self.longitude = UserDefaults.standard.value(forKey: "longitude") as! Double
+                self.title = UserDefaults.standard.value(forKey: "countryTextField") as! String
+            }
+        }
     }
 }
 
